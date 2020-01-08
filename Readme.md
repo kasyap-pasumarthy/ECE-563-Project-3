@@ -6,7 +6,7 @@ I also attempted to model a data cache linked to the functional units but was un
 
 To run the simulator, type 'make' in console to run the Makefile and compile the code. Once that's done, give command line inputs as follows:
 
-sim <S> <N> <BLOCKSIZE> <L1_size> <L1_ASSOC> <L2_SIZE> <L2_ASSOC> <tracefile>
+sim (S) (N) (BLOCKSIZE) (L1_size) (L1_ASSOC) (L2_SIZE) (L2_ASSOC) (tracefile)
  S: Scheduling Queue size.
  N: Peak fetch, dispatch, and issue rate.
  BLOCKSIZE: Positive integer. Block size in bytes. (Same block size for all caches in the memory hierarchy.)
