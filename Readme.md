@@ -7,18 +7,16 @@ I also attempted to model a data cache linked to the functional units but was un
 To run the simulator, type 'make' in console to run the Makefile and compile the code. Once that's done, give command line inputs as follows:
 
 sim <S> <N> <BLOCKSIZE> <L1_size> <L1_ASSOC> <L2_SIZE> <L2_ASSOC> <tracefile>
-o S: Scheduling Queue size.
-o N: Peak fetch, dispatch, and issue rate.
-o BLOCKSIZE: Positive integer. Block size in bytes. (Same block size for all caches in
-the memory hierarchy.)
-o L1_SIZE: Positive integer. L1 cache size in bytes.
-o L1_ASSOC: Positive integer. L1 set-associativity (1 is direct-mapped).
-o L2_SIZE: Positive integer. L2 cache size in bytes. L2_SIZE = 0 signifies that there
-is no L2 cache.
-o L2_ASSOC: Positive integer. L2 set-associativity (1 is direct-mapped).
-o tracefile: is the filename of the input trace.
+ S: Scheduling Queue size.
+ N: Peak fetch, dispatch, and issue rate.
+ BLOCKSIZE: Positive integer. Block size in bytes. (Same block size for all caches in the memory hierarchy.)
+ L1_SIZE: Positive integer. L1 cache size in bytes.
+ L1_ASSOC: Positive integer. L1 set-associativity (1 is direct-mapped).
+ L2_SIZE: Positive integer. L2 cache size in bytes. L2_SIZE = 0 signifies that there is no L2 cache.
+ L2_ASSOC: Positive integer. L2 set-associativity (1 is direct-mapped).
+ tracefile: is the filename of the input trace.
 Note:
-BLOCKSIZE, L1_siz
+BLOCKSIZE, L1_SIZE, L1_ASSOC, L2_SIZE, L2_ASSOC are 0 if no data caches are modeled.
 
 (<tracefile> is the filename of the input trace.) 
 
